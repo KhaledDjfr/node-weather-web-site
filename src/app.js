@@ -43,7 +43,7 @@ app.get('',(req,res)=> {
     }) 
 })
 app.get('/about',(req,res)=> {
-    res.render('index', {
+    res.render('about', {
         title:"About ",
         name: "Khaled.D",
 
