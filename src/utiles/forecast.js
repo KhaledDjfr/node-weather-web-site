@@ -11,7 +11,8 @@ request({url:weather , json:true }, (error, response)=> {
         } else if (response.body.error) {
             callback('uanble to get the weather check your location  ', undefined)
         } else {
-            callback(undefined ,` For The Summmary of the day ${response.body.daily.data[0].summary} , and it's Currently  ${response.body.currently.temperature} dgress and ${response.body.currently.precipProbability}% chance of rain`)
+            callback(undefined ,` For The Summmary of the day ${response.body.daily.data[0].summary} , and it's Currently  ${response.body.currently.temperature} dgress and ${response.body.currently.precipProbability}% chance of rain
+            and for The Wind Speeed ${response.body.currently.windSpeed}`)
         }
         })
 }
